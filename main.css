@@ -1,0 +1,537 @@
+:root {
+  --serif: "Merriweather", serif;
+  --sans: "Asap", sans-serif;
+  --light: #3E5865;
+  --blue: #BAD0DB;
+  --dark: #2F434D;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--sans);
+  color: var(--light);
+}
+
+button {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+body {
+  font-family: var(--sans);
+}
+
+h2 {
+  text-align: center;
+  margin: 3rem auto 5rem;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  display: block;
+  background-color: var(--light);
+  padding: 1rem;
+  border-radius: 3px;
+  color: white;
+  text-transform: uppercase;
+}
+
+header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  transition: 0.3s ease-in-out;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+section {
+  scroll-margin-top: 6.5rem;
+}
+
+p,
+span {
+  max-width: 50ch;
+  line-height: 1.5;
+}
+
+
+.logo,
+.phone {
+  text-align: center;
+  padding: 3%;
+  font-family: var(--sans);
+}
+
+.intro-text{
+  color: white;
+  text-shadow: 0px 3px 3px var(--light);
+  font-size: 4rem;
+  line-height: 1.5;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+
+.logo-img {
+  height: 3rem;
+  padding: 2%;
+}
+
+.nav-links {
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.nav-links > a {
+  display: block;
+  padding: 3%;
+  transition: all 0.2s ease-in;
+}
+
+.nav-fixed {
+  height: 6rem;
+  position: fixed;
+  top: 0;
+}
+
+.nav-mobile{
+  display: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.nav-active {
+  color: var(--dark);
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 0px 5px var(--light);
+  z-index: 100;
+}
+
+.nav-links > a:hover {
+  color: black;
+  border-bottom: 5px solid black;
+}
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.full{
+  width: 100;
+}
+
+/* .close-btn, .nav-toggle{
+  display: none;
+} */
+
+#intro {
+  background: linear-gradient(0deg, rgba(62,88,101, 0.6), rgba(62,88,101, 0.6)), url(img/img7.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+/* OFFER */
+
+#offer{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.offer-header{
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid var(--light);
+  color: black;
+  margin: 2rem auto;
+  box-shadow: 0px 3px 5px var(--light);
+  transition: .2s ease-in;
+}
+
+.offer-header:hover{
+  transform: translateX(15px);
+}
+
+.offer-box{
+  width: 60%;
+  margin: 0 auto;
+  transition: .2s ease-in;
+}
+
+.offer-text{
+  line-height: 1.5;
+  max-width: 60ch;
+  display: none;
+  padding-left: 3rem;
+}
+
+.offer-text--list{
+  list-style-type: none;
+}
+
+.offer-text--list li::before{
+  content: '\f0da';
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.active {
+  color: var(--light);
+}
+
+
+
+/* TEAM */
+
+#team {
+  min-height: 100vh;
+}
+
+.card-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 35vw;
+  height: auto;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.team-img {
+  display: block;
+  max-width: 60%;
+}
+
+.info {
+  width: 70%;
+  background-color: white;
+  position: relative;
+  margin-left: 10%;
+  margin-top: -10%;
+}
+
+.info p {
+  margin: 1.5rem auto;
+}
+
+.p-mail {
+  font-weight: bold;
+  color: var(--dark);
+  font-size: 1rem;
+  font-family: var(--sans);
+}
+
+.p-mail::before{
+  content: '\f0e0';
+  font-family: FontAwesome;
+  margin-right: 1rem;
+  color: var(--light);
+}
+/* NEWS */
+
+.articles {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+article {
+  width: 45%;
+  margin: 2rem 0;
+}
+
+.article-text {
+  text-indent: 3rem;
+  text-align: justify;
+  padding: 2rem 0;
+  font-family: var(--serif);
+}
+
+.article-text p:first-of-type {
+  text-indent: 0rem;
+}
+
+article a {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+}
+
+article a:hover {
+  color: black;
+  transform: translateX(5px);
+}
+
+.article-img{
+  border-radius: 5px;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+/* REFS */
+
+
+.opinions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opinion {
+  background-color: white;
+  position: relative;
+  border-left: 3px solid var(--light);
+  margin: 1.5rem;
+  padding: 1rem;
+}
+
+.light{
+  color: var(--light);
+}
+
+em {
+  font-family: var(--serif);
+}
+
+/* KARIERA */
+
+#career {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(0deg, rgba(62,88,101, 0.6), rgba(62,88,101, 0.6)), url(img/img9.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.work-container {
+  position: relative;
+  top: 40%;
+  left: 25%;
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-container p{
+  color: white;
+  text-align: center;
+  margin: 2rem;
+}
+
+.work-btn {
+  background-color: black;
+  color: white;
+  padding: 3% 5%;
+  border-radius: 15px;
+  transition: 0.2s ease-in;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.work-btn:hover, input[type=submit]:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 5px var(--blue);
+}
+
+/* CONTACT */
+
+
+form {
+  width: 60%;
+  margin: 2rem auto;
+  text-align: left;
+  padding: 2rem;
+  box-shadow: 0px 0px 6px var(--light);
+  border-radius: 5px;
+  background-color: var(--blue);
+  
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 1rem 0 2rem 0;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px var(--light);
+}
+
+textarea{
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px var(--light);
+  outline: none;
+  border: none;
+}
+
+input[type=submit]{
+  width: 100%;
+  font-size: 1rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 5px;
+  margin: 1rem auto;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px black;
+  transition: .2s ease-in;
+}
+
+.contact-box{
+  background-color: var(--dark);
+  color: white;
+  padding: 5%;
+}
+
+.contact-addres{
+  margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer {
+  height: 3rem;
+  text-align: center;
+  font-family: var(--sans);
+  line-height: 3rem;
+  background-color: black;
+  color: var(--blue);
+  font-size: .8rem;
+}
+
+@media screen and (max-width: 800px) {
+  .logo{
+    display: none;
+  }
+
+  .intro-text{
+    font-size: 3rem;
+  }
+ 
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .team-img{
+    max-width: 75%;
+  }
+
+  .info {
+    margin-left: 3rem;
+  }
+
+  .articles, .card-container{
+    align-items: center;
+  }
+
+  article {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .articles, .contact-container, .card-container, .nav-links {
+    flex-direction: column;
+  }
+  .contact-half, .offer-box{
+    width: 100%;
+  }
+  
+  form{
+    margin: 0 auto;
+  }
+
+  .nav-fixed{
+    height: 4rem;
+  } 
+
+  .nav-links{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--dark);
+    text-align: left;
+    width: 100%;
+  }
+
+  nav{
+    display: none;
+    transition: .3s ease-in;
+  }
+
+  .nav-link{
+    font-size: 1.5rem;
+    padding: .5rem;
+    color: var(--blue);
+  }
+
+  .nav-links > a:hover{
+    border-bottom: none;
+  }
+
+  .nav-mobile{
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    max-width: 10%;
+  }
+
+}
