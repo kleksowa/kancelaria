@@ -18,51 +18,52 @@
 <body>
 
     <!-- MAIN -->
-    <header class="nav-fixed">
-        <div class="logo">
-            <img class="logo-img" alt="logo" src="img/icons/building.svg"> <br>
-            Kancelaria
-        </div>
-        <div class="nav-mobile"><img class="nav-toggle" src="img/icons/menu.svg"></div>
-
-        <nav>
-            <ul class="nav-links">
-                <a href="#intro">
-                    <li class="nav-link"> Strona&nbsp;główna</li>
-                </a>
-                <a href="#offer">
-                    <li class="nav-link">Oferta</li>
-                </a>
-                <a href="#team">
-                    <li class="nav-link">Zespół</li>
-                </a>
-                <a href="#career">
-                    <li class="nav-link">Kariera</li>
-                </a>
-                <a href="#news">
-                    <li class="nav-link">Aktualności</li>
-                </a>
-                <a href="#references">
-                    <li class="nav-link">Opinie</li>
-                </a>
-                <a href="#contact">
-                    <li class="nav-link">Kontakt</li>
-                </a>
-
-            </ul>
-        </nav>
-        <div class="logo"> <img class="logo-img" src="img/icons/phone.svg" alt="phone"> </br>555-333-888</div>
-    </header>
 
     <section id="intro">
-        <div class="intro-text">Nowak i Partnerzy
-            <br>
-            kancelaria prawna w Poznaniu
+        <div class="intro-text">
+            <div class="intro-p">Nowak i Partnerzy </div>
+            <div class="intro-p">kancelaria prawna</div>
         </div>
 
+
+
+
+        <header class="nav-fixed">
+            <div class="logo">
+                <img class="logo-img" alt="logo" src="img/icons/building.svg"> <br>
+                Kancelaria
+            </div>
+            <div class="nav-mobile"><img class="nav-toggle" src="img/icons/menu.svg"></div>
+
+            <nav>
+                <ul class="nav-links">
+                    <a href="#intro">
+                        <li class="nav-link"> Strona&nbsp;główna</li>
+                    </a>
+                    <a href="#offer">
+                        <li class="nav-link">Oferta</li>
+                    </a>
+                    <a href="#team">
+                        <li class="nav-link">Zespół</li>
+                    </a>
+                    <a href="#career">
+                        <li class="nav-link">Kariera</li>
+                    </a>
+                    <a href="#news">
+                        <li class="nav-link">Aktualności</li>
+                    </a>
+                    <a href="#references">
+                        <li class="nav-link">Opinie</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="nav-link">Kontakt</li>
+                    </a>
+
+                </ul>
+            </nav>
+            <div class="logo"> <img class="logo-img" src="img/icons/phone.svg" alt="phone"> </br>555-333-888</div>
+        </header>
     </section>
-
-
     <!-- OFFER -->
 
     <section id="offer">
@@ -70,7 +71,7 @@
 
         <div class="offer-box">
             <h3 class="offer-header">Prawo pracy</h3>
-            <div class="offer-text">
+            <div class="offer-text hide">
                 <ul class="offer-text--list">
                     <li>Czas pracy</li>
                     <li>Wypowiedzenia - obowiązki pracownika i pracodawcy</li>
@@ -82,7 +83,7 @@
 
         <div class="offer-box">
             <h3 class="offer-header">Prawo rodzinne i spadkowe</h3>
-            <div class="offer-text">
+            <div class="offer-text hide">
                 <ul class="offer-text--list">
                     <li>Rozwody</li>
                     <li>Spadki i testamenty</li>
@@ -93,7 +94,7 @@
 
         <div class="offer-box">
             <h3 class="offer-header">Spółki handlowe</h3>
-            <div class="offer-text">
+            <div class="offer-text hide">
                 <ul class="offer-text--list">
                     <li>Przekształcanie spółek</li>
                     <li>Rejestrowanie działalności</li>
@@ -105,7 +106,7 @@
 
         <div class="offer-box">
             <h3 class="offer-header">Nieruchomości</h3>
-            <div class="offer-text">
+            <div class="offer-text hide">
                 <ul class="offer-text--list">
                     <li>Zarządzanie nieruchomościami</li>
                     <li>Prawo budowlane</li>
@@ -117,7 +118,8 @@
 
         <div class="offer-box">
             <h3 class="offer-header">Działalność Pro Bono</h3>
-            <div class="offer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusamus eum amet
+            <div class="offer-text hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusamus eum
+                amet
                 veritatis neque ullam, obcaecati quasi reprehenderit hic id at, dolores ut nesciunt cum pariatur,
                 repudiandae assumenda dicta nisi.</div>
         </div>
@@ -345,6 +347,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
         integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 
 </body>

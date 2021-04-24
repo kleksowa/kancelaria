@@ -1,4 +1,18 @@
+const tl = gsap.timeline({ defaults: { ease: "sine.out" } });
+
+if (window.innerWidth > 800) {
+    tl.to('.intro-p', { x: 200, opacity: 1, duration: 1, stagger: .5 });
+}
+else {
+    tl.to('.intro-p', { x: 0, opacity: 1, duration: 1 })
+};
+
+tl.to('header', { opacity: 1, duration: 1 }, "-=1");
+gsap.to('.card', { scrollTrigger: '.card-container', scale: 1, duration: 1, stagger: .5 });
+gsap.to('article', { scrollTrigger: '.articles', scale: 1, duration: 1, stagger: .5 })
+
 window.addEventListener('load', function () {
+
 
     // PRZYKLEJANIE NAWIGACJI
     const navbar = document.querySelector('.nav-fixed');
@@ -17,9 +31,9 @@ window.addEventListener('load', function () {
             this.classList.toggle('active');
 
             let textbox = this.nextElementSibling;
-            textbox.classList.toggle('show');
+            textbox.classList.toggle('hide');
         });
-    }
+    };
 
     // NAV-MOBILE
 
@@ -38,6 +52,4 @@ window.addEventListener('load', function () {
             }
         )
     }
-
-    // KONIEC SKRYPTÓW
 });
