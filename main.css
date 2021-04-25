@@ -1,6 +1,6 @@
 :root {
-  --serif: "Merriweather", serif;
-  --sans: "Asap", sans-serif;
+  --serif: 'Crimson Pro', serif;
+  --sans: 'Montserrat', sans-serif;
   --light: #3E5865;
   --blue: #BAD0DB;
   --dark: #2F434D;
@@ -37,11 +37,11 @@ body {
 h2 {
   text-align: center;
   margin: 3rem auto 5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display: block;
   background-color: var(--light);
   padding: 1rem;
@@ -178,15 +178,12 @@ span {
   cursor: pointer;
   background-color: white;
   border: 1px solid var(--light);
-  color: black;
+  color: var(--light);
   margin: 2rem auto;
   box-shadow: 0px 3px 5px var(--light);
   transition: .2s ease-in;
 }
 
-.offer-header:hover{
-  transform: translateX(15px);
-}
 
 .offer-box{
   width: 60%;
@@ -212,7 +209,8 @@ span {
 }
 
 .active {
-  color: var(--light);
+  color: black;
+  transform: translateX(15px);
 }
 
 
@@ -240,6 +238,7 @@ span {
 .team-img {
   display: block;
   max-width: 60%;
+  border-radius: 3px;
 }
 
 .info {
@@ -267,6 +266,7 @@ span {
   margin-right: 1rem;
   color: var(--light);
 }
+
 /* NEWS */
 
 .articles {
@@ -323,7 +323,6 @@ article a:hover {
 
 .opinion {
   background-color: white;
-  position: relative;
   border-left: 3px solid var(--light);
   margin: 1.5rem;
   padding: 1rem;
@@ -331,10 +330,7 @@ article a:hover {
 
 .light{
   color: var(--light);
-}
-
-em {
-  font-family: var(--serif);
+  font-family: var(--sans);
 }
 
 /* KARIERA */
@@ -482,6 +478,10 @@ footer {
     margin-left: 3rem;
   }
 
+  .work-btn{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
   .articles, .card-container{
     align-items: center;
   }
